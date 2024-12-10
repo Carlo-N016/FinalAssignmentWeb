@@ -20,16 +20,20 @@
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <span class="error-message" id="nameError"></span>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required >
+            <span class="error-message" id="emailError"></span>
         </div>
         <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message" id="messageError"></span>
         </div>
         <button type="submit">Send Message</button>
+        <div id="formSuccess" class="message-good"></div>
     </form>
 
     <div class="social-links">
@@ -38,6 +42,6 @@
     </div>
 </main>
     
-<script src="scripts.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
