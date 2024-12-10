@@ -1,0 +1,234 @@
+body {
+    font-family: 'Share Tech', sans-serif;
+    text-shadow: 8px 8px 10px #0000008e;
+    background-color: #334366;
+    color: white;
+    margin: 0;  
+    padding: 0;
+}
+
+
+/* The Navigation */
+
+nav{
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: rgb(64, 129, 123);
+}
+
+nav a.active{
+    color: rgb(64, 129, 123);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container   {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius:15px;
+    margin-bottom: 20px;
+}
+
+
+.cool-list{
+    list-style: none;
+    padding: 0;
+}
+
+.progress-bar{
+    background: rgba(255, 255, 255, 0.1);
+    height: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.progress {
+    background: rgb(64, 129, 123);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.contact-form {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 4px;
+}
+
+.error{
+    border-color: #ff4444;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.social-links{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+
+}
+
+.social-links a:hover {
+    color: rgb(64, 129, 123);
+}
+
+.project-card{
+    text-align: center;
+}
+
+.project-image{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-meta{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(64, 129, 123);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: rgb(54, 109, 103);
+}
+
+.resume-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education, .skills{
+    margin-bottom: 30px;
+}
+
+.into-section{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.quick-intro{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.learning-card{
+    padding: 30px
+}
+
+.focus-list{
+    list-style-type: none;
+    padding: 0; 
+    margin: 20px 0;
+}
+
+
+.focus-list li:before{
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: rgb(64, 129, 123);
+}
+
+.highlight-item{
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover{
+    transform: translateY(-5px);
+}
+
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+}
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.profile-image{
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}

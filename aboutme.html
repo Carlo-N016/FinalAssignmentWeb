@@ -4,53 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
-  <style>
-     body{
-            font-family: 'Share Tech', sans-serif;
-            text-shadow:8px 8px 10px #0000008e;
-            background-color: #334366;
-            overflow: hidden;
-            
-        }
-
-        nav{
-            text-align: center;
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav a{
-            text-decoration: none;
-            margin: 0 15px;
-            color: white;
-            font-size: 18px;
-        }
-        nav a:hover{
-            color:rgb(64, 129, 123);
-        }
-      
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="contact.html" target="_blank">Contact</a>
-        <a href="aboutme.html" target="_blank">About me</a>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html" class="active">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div class="aboutinfo" style="text-align:center; color: white;">
-        <br>
-        <h1>About me </h1>
-        <br>
-        <h2>Personal Introduction</h2>
-        <p>Hello! My name is Carl Baptiste and i am an aspiring Software Developer currently studying Computer Programming & Analysis at Humber College  </p>
-        <br>
-        <h2>Hobbies and Interest</h2>
-        <p>When i am not coding, i involve myself in reading science fiction novels and comics, participating in sports and workouts. </p>
-        <br>
-        <h2>Achievements and Milestones</h2>
-        <p>Although I haven't achieved anything I aspire to achieve yet, I am continuously learning, growing, and working towards my goals, knowing that every step I take brings me closer to where I want to be.  </p>
+    
+    <main class="contaier">
+        <section class="bio">
+            <h1>About me</h1>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="bio-text">
+                        <h2>Who I AM</h2>
+                        <p>I'm a passionate Computer Programming student at Humber College, dedicated to creating efficient and innovative software solutions.</p>
+                    </div>
+                </div>
 
-        
-    </div>
+                <div class="card">
+                    <h2>My Skills</h2>
+                    <ul class="cool-list">
+                        <li>
+                            <span>HTML/CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Javascript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span>Python</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carl Baptiste. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

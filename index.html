@@ -3,105 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>   
-    <style>
-        body{
-            font-family: 'Share Tech', sans-serif;
-            text-shadow:8px 8px 10px #0000008e;
-            background-color: #334366;
-            overflow: hidden;
-        }
-
-        .hoverTT {
-            text-align: center;
-            color: white;
-            transition: color 0.8s ease-in-out;
-        }
-
-       
-        .hoverTT:hover {
-            color: rgb(195, 244, 96);
-        }
-        .navig  {
-            list-style-type:none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around; 
-            width: 100%;
-            max-width: 1200px
-
-        }
-        
-        .navig a{
-            text-decoration: none;
-            color: white;
-            transition: 0.9s ease-in-out;
-        }
-        nav{
-            display: flex;
-            justify-content: center;
-        }
-
-        .navig a:hover{
-            color:rgb(145, 145, 231);
-        }
-
-        .briefDes{
-            text-align:center; color: white;
-        }
-
-        .tmay{
-            text-align:center; color: white;
-        }
-    </style>
+    <title>Home - Carl Baptiste</title>   
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
-
-
 <body>
-    <header> <!--Header-->
-    <h1 class="hoverTT">Welcome to my Page <br><br> Carl Baptiste </h1>
-        <nav>
-            <!---Work in progress-->
-            <ul class="navig">
-                <li><a href="index.html" target="_blank">Home</a></li>
-                
-                <li ><a href="/aboutme.html" target="_blank">About me</a></li>
-                
-                <li><a href="Contact" target="_blank">Contact</a></li>
-                
+   
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+   
+    <main class="container">
+      <div class="hero-section">
+        <div class="hero-content">
+            <div class="text-content">
+                <h1>Carl Baptiste</h1>
+                <h2>Software Developer Currently in Training</h2>
+                <p class="tagline">Growing, Learning, and Building My future in Tech</p>
+                <div class="cta-buttons">
+                 <a href="aboutme.html" class="button">Learn About me</a>
+                 <a href="contact.html" class="secondButton"></a>
+            </div>
+             </div>
 
-            </ul>
-        </nav>
+            <div class="hero-image">
+                <img src="images/PXL_20241205_224248299.jpg" alt="">
+            </div>
+        </div>
+       
+      </div>
 
-    </header>
+      <div class="learning-section">
+        <h2>My Leaning Journey</h2>
+        <div class="grid-container">
+            <div class="card learning-card">
+                <h3>Current Focus</h3>
+                <p>Studying Computer Programming & Analysis at Humber College, where I'm building my skills in: </p>
+                <ul class="focus-list">
+                    <li>Web Development (HTML, CSS, JavaScripts)</li>
+                    <li>Python</li>
+                    <li>Software Development Principles</li>
+                </ul>
+            </div>
+            <div class="card project-card">
+                <h3>My Future Goals</h3>
+                <p>As i progress in my journey in tech, I'm excited:</p>
+                <ul class="focus-list">
+                    <li>Master Full-Stack Development</li>
+                    <li>Build Real-World Projects</li>
+                    <li>Contribute to Open Sources Projects</li>
+                </ul>
+            </div>
+        </div>
+      </div>
 
-    <br>
-    <br>
-    <div class="briefDes">
-        <h2>Brief Description About Me</h2>
-        <p>My name is Carl Baptiste and i am aspiting Software Developer at Humber College </p>
-        <blockquote>"The only way to do great work is to love what you do." — Steve Jobs</blockquote>
-
-    </div>
-    <br>
-    <br>
-    <!--Work in Progrss-->
-    <main class="tmay">
-        <h2>Tell me about yourself</h2>
-        <form action="submit" method="post">
-            <input type="text" placeholder="Your Name">
-            <br>
-            <br>
-           <textarea placeholder="About you (Max 500 words)" id="about-you" rows="6"></textarea>
-            <br><br>
-            <button type="submit">Submit</button>
-
-        </form>
-
+      <div class="hightlights-section">
+        <h2>What Motivates me</h2>
+        <div class="highligths-grid">
+            <div class="highlight-item">
+                <h3>Passion for Learning</h3>
+                <p>Eager about acquiring new programming skills and technologies</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Problem Solving</h3>
+                <p>Ready to tackle complex challenges and find innovative solutions</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Collaboration</h3>
+                <p>Ready to work with others and contribute to meaningful projects</p>
+            </div>
+        </div>
+      </div>
     </main>
 
+    <footer>
+        <p>&copy; 2024 Carl Baptiste. All right reserved.</p>
+    </footer>
 </body>
 </html>
